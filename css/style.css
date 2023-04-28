@@ -14,3 +14,18 @@ body {
     background-image: url(../img/header-background@2x.png);
     background-size: cover;
 }
+
+.icon__background {
+    position: relative;
+    width: 90px;
+    height: 90px;
+    background-color: #63c9e0;
+    border-radius: 50%;
+}
+
+.icon__image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
