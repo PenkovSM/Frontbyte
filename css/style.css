@@ -6,3 +6,11 @@ body {
     margin: 0 auto;
     max-width: 1180px;
 }
+
+
+/* header  */
+
+.container--header {
+    background-image: url(../img/header-background@2x.png);
+    background-size: cover;
+}
