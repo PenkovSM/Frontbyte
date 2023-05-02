@@ -12,6 +12,7 @@
     <link rel="preload" href="fonts/Roboto-Black.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 </head>
 <body>
+    <!-- header  -->
     <header class="header">
         <div class="container container--header">
             <div class="header__menu">
@@ -41,14 +42,17 @@
                     </ul>
                 </nav>
                 <ul class="language">
+                    <input type="radio" id="no" name="language" class="language__input">
+                    <input type="radio" id="en" name="language" class="language__input" checked>
+                    <input type="radio" id="ru" name="language" class="language__input">
                     <li class="language__item">
-                        No
+                        <label for="no">No</label>
                     </li>
                     <li class="language__item">
-                        En
+                        <label for="en">En</label>
                     </li>
                     <li class="language__item">
-                        Ru
+                        <label for="ru">Ru</label>
                     </li>
                 </ul>
             </div>
@@ -56,9 +60,10 @@
                 <h2 class="header__title">We&nbsp;provide digital services and develop our own products in&nbsp;sports and iHealth industry</h2>
                 <p class="header__subscription">We&nbsp;put technology and sport together to&nbsp;create the world&rsquo;s most efficient and popular sports apps.</p>
             </div>
-            <a href="" class="header__link">Drop us a line</a>
+            <a href="#" class="header__link">Drop us a line</a>
         </div>
     </header>
+    <!-- main  -->
     <main class="main">
         <section class="about">
             <div class="container">
@@ -115,6 +120,7 @@
                 </div>
             </div>
         </section>
+        <!-- work  -->
         <section class="work">
             <div class="container">
                 <div class="wrapper">
@@ -151,6 +157,7 @@
                 </div>
             </div>
         </section>
+        <!-- inside  -->
         <section class="inside">
             <div class="container">
                 <div class="wrapper">
@@ -184,6 +191,7 @@
             </div>
         </section>
     </main>
+    <!-- footer  -->
     <footer class="footer">
         <div class="container">
             <div class="wrapper">
