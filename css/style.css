@@ -414,3 +414,88 @@ li label {
 .block__card--right {
     background-color: var(--light);
 }
+
+/* inside  */
+
+.inside {
+    margin-bottom: 80px;
+}
+
+.inside__wrapper {
+    margin-right: 0;
+}
+
+.inside__title {
+    margin-bottom: 25px;
+}
+
+.inside__subscription {
+    margin-bottom: 90px;
+    max-width: 980px;
+    min-height: 40px;
+    font-size: 30px;
+    line-height: 1.33;
+    color: var(--dark);
+}
+
+.inside__block {
+    position: relative;
+    padding: 0;
+    background-image: url(../img/inside-press@2x.jpg);
+    background-size: cover;
+}
+
+.block__card--inside {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateX(-50%);
+    border-bottom: 1px solid var(--silver);
+    background-color: var(--light);
+}
+
+.news {
+    
+}
+
+.news__title {
+    margin-bottom: 50px;
+    max-width: 280px;
+    min-height: 20px;
+    font-size: 13px;
+    font-weight: 900;
+    line-height: 1.54;
+    letter-spacing: 1.73px;
+    color: var(--dark);
+    text-transform: uppercase;
+}
+
+.news__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.news__item {
+    margin-bottom: 20px;
+    max-width: 280px;
+    min-height: 100px;
+}
+
+.news__item:not(:last-child) {
+    margin-right: 120px;
+}
+
+.news__content {
+    margin-bottom: 20px;
+    min-height: 60px;
+    font-size: 20px;
+    line-height: 1.5;
+    color: var(--dark);
+}
+
+.news__time {
+    min-height: 20px;
+    font-size: 15px;
+    line-height: 1.33;
+    color: #93a4a9;
+}
