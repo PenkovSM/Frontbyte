@@ -499,3 +499,74 @@ li label {
     line-height: 1.33;
     color: #93a4a9;
 }
+
+/* footer  */
+
+.footer {
+    padding-top: 100px;
+    background-color: #000;
+}
+
+.footer__wraper {
+    margin-right: 100px;
+}
+
+.footer__contact {
+    display: flex;
+    margin-bottom: 75px;
+}
+
+.footer__title {
+    margin: 0;
+    color: var(--light);
+}
+
+.social {
+    display: flex;
+}
+
+.social__item {
+    
+}
+
+.social__link {
+    
+}
+
+.footer__caption {
+    margin-bottom: 90px;
+    max-width: 381px;
+    min-height: 90px;
+    font-size: 20px;
+    line-height: 1.5;
+    color: var(--light);
+}
+
+.footer__row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__geo {
+    display: flex;
+    flex-direction: column;
+    min-width: 380px;
+    min-height: 150px;
+}
+
+.footer__country {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.5;
+    color: #f4f4f7;
+}
+
+.footer__city,
+.footer__adress,
+.footer__mail,
+.footer__phone {
+    font-size: 15px;
+    line-height: 1.67;
+    color: #f4f4f7;
+}
