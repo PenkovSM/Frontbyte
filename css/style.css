@@ -199,6 +199,10 @@ li label {
 
 /* about  */
 
+.about {
+    margin-bottom: 100px;
+}
+
 .wrapper--about {
     margin: 0;
     padding: 90px 100px 137px 200px;
@@ -289,4 +293,53 @@ li label {
     width: 30px;
     height: 1px;
     background-color: var(--blue);
+}
+
+
+/* work  */
+
+.work {
+    margin-bottom: 100px;
+}
+
+.work__title {
+    margin-bottom: 25px;
+}
+
+.work__subscription {
+    margin-bottom: 90px;
+    max-width: 980px;
+    min-height: 40px;
+    font-size: 30px;
+    line-height: 1.33;
+    color: var(--dark);
+}
+
+.work__shell {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.block {
+    border: 1px solid red;
+    width: 49.15%;
+}
+
+.block--big {
+    display: flex;
+    align-items: flex-end;
+    padding: 20px;
+    width: 100%;
+    min-height: 600px;
+}
+
+.block--birdieeyes {
+    
+}
+
+.block__card {
+    border: 1px solid black;
+    width: 380px;
+    height: 380px;
 }
