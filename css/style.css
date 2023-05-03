@@ -92,6 +92,11 @@ h2 {
     font-weight: 900;
 }
 
+.title--grey {
+    color: var(--silver);
+    margin-bottom: 75px;
+}
+
 /* header  */
 
 .header {
@@ -253,4 +258,35 @@ li label {
     font-weight: bold;
     line-height: 1.5;
     color: var(--dark);
+}
+
+.do-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.do-list__item {
+    position: relative;
+    margin-bottom: 30px;
+    width: 380px;
+    min-height: 30px;
+    font-size: 20px;
+    line-height: 1.5;
+    color: var(--dark);
+}
+
+.do-list__item:nth-child(1),
+.do-list__item:nth-child(2) {
+    margin-bottom: 20px;
+}
+
+.do-list__item::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: -60px;
+    width: 30px;
+    height: 1px;
+    background-color: var(--blue);
 }
