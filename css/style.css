@@ -92,6 +92,10 @@ h2 {
     font-weight: 900;
 }
 
+h3 {
+    margin: 0;
+}
+
 .title--grey {
     color: var(--silver);
     margin-bottom: 75px;
@@ -322,24 +326,91 @@ li label {
 }
 
 .block {
-    border: 1px solid red;
+    padding-top: 360px;
+    margin-bottom: 70px;
     width: 49.15%;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .block--big {
-    display: flex;
-    align-items: flex-end;
     padding: 20px;
     width: 100%;
     min-height: 600px;
 }
 
+.block__title {
+    margin-bottom: var(--gap);
+    max-width: 440px;
+    min-height: 20px;
+    font-size: 13px;
+    font-weight: 900;
+    line-height: 1.54;
+    letter-spacing: 1.73px;
+    color: var(--dark);
+}
+
+.block__caption {
+    max-width: 440px;
+    min-height: 80px;
+    font-size: 30px;
+    line-height: 1.33;
+    color: var(--dark);
+}
+
+.block__title--white,
+.block__caption--white {
+    color: var(--light);
+}
+
 .block--birdieeyes {
-    
+    margin-bottom: 20px;
+    background-image: url(../img/work-vid-birdieeyes@2x.jpg);
+    background-size: cover;
+}
+
+.block--upsport {
+    background-image: url(../img/work-img-upsport@2x.jpg);
+}
+
+.block--xland {
+    background-image: url(../img/work-img-xland@2x.jpg);
+}
+
+.block--phonero {
+    background-image: url(../img/work-img-phonero@2x.jpg);
+}
+
+.block--kongsberg {
+    background-image: url(../img/work-img-kongsberg@2x.jpg);
+}
+
+.block--team {
+    background-image: url(../img/work-img-team-home@2x.jpg);
+    background-size: cover;
 }
 
 .block__card {
-    border: 1px solid black;
-    width: 380px;
-    height: 380px;
+    padding: 40px;
+    max-width: 380px;
+    min-height: 380px;
+}
+
+.block__card--left {
+    background-color: var(--blue);
+}
+
+.wrapper--left,
+.wrapper--right {
+    height: 100%;
+    display: flex;
+    align-items: end;
+}
+
+.wrapper--right {
+    justify-content: flex-end;
+}
+
+.block__card--right {
+    background-color: var(--light);
 }
