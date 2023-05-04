@@ -110,6 +110,7 @@ h3 {
 
 .container--header {
     position: relative;
+    padding-bottom: 80px;
     min-height: 680px;
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url(../img/header-background@2x-min.png);
     background-size: cover;
@@ -180,6 +181,7 @@ li label {
 }
 
 .header__subscription {
+    margin-bottom: 78px;
     max-width: 679px;
     font-size: 20px;
     line-height: 30px;
@@ -342,7 +344,7 @@ li label {
 
 .block__title {
     margin-bottom: var(--gap);
-    max-width: 440px;
+    max-width: 300px;
     min-height: 20px;
     font-size: 13px;
     font-weight: 900;
@@ -352,8 +354,8 @@ li label {
 }
 
 .block__caption {
-    max-width: 440px;
-    min-height: 80px;
+    max-width: 300px;
+    min-height: 240px;
     font-size: 30px;
     line-height: 1.33;
     color: var(--dark);
