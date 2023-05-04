@@ -143,6 +143,35 @@ h3 {
     margin-right: 50px;
 }
 
+.nav__link {
+    position: relative;
+    transition: color 0.3s ease-in-out, outline 0.3s ease-in-out, outline-offset 0.3s ease-in-out;
+}
+
+.nav__link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    border-bottom: 1px solid var(--blue);
+    transition: width 0.3s ease-in-out;
+}
+
+.nav__link:focus {
+    outline: 1px solid var(--blue);
+    outline-offset: 3px;
+}
+
+.nav__link:hover::after {
+    width: 100%;
+}
+
+.nav__link:active {
+    color: var(--blue);
+    outline: none;
+}
+
 .language {
     display: flex;
 }
@@ -161,17 +190,29 @@ h3 {
     line-height: 20px;
 }
 
+
+
 li label {
     padding: 10px;
+    border-radius: 50%;
     cursor: pointer;
+    transition: color 0.3s ease-in-out, outline 0.3s ease-in-out;
+}
+
+li label:hover {
+    color: var(--blue);
 }
 
 #no:checked ~ li label[for="no"],
 #en:checked ~ li label[for="en"],
 #ru:checked ~ li label[for="ru"] {
     outline: 1px solid var(--light);
-    /* border: 1px solid var(--light); */
-    border-radius: 50%;
+}
+
+#no:checked ~ li label[for="no"]:hover,
+#en:checked ~ li label[for="en"]:hover,
+#ru:checked ~ li label[for="ru"]:hover {
+    color: var(--light);
 }
 
 .header__title {
