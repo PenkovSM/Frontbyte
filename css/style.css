@@ -673,10 +673,26 @@ li label:hover {
     font-size: 15px;
     line-height: 1.67;
     color: #f4f4f7;
+    transition: 0.3s ease-in-out;
 }
 
 .footer__mail {
     color: var(--blue);
+}
+
+.footer__mail:focus,
+.footer__phone:focus {
+    outline: 1px solid var(--blue);
+}
+
+.footer__mail:hover,
+.footer__phone:hover {
+    text-decoration: underline;
+}
+
+.footer__mail:active,
+.footer__phone:active {
+    color: blue;
 }
 
 .footer__link {
