@@ -1,0 +1,21 @@
+<svg width="30" height="30" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <path d="m28.071,16l-28.071,0l0,-1l28.293,0l-6.293,-6.293l0.707,-0.707l7.071,7.071l-0.318,0.318l0.318,0.318l-7.07,7.071l-0.708,-0.707l6.071,-6.071z" id="a"/>
+ </defs>
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <g id="svg_1" fill-rule="evenodd" fill="none">
+   <mask id="b">
+    <use id="svg_2" xlink:href="#a"/>
+   </mask>
+   <use stroke="#63c9e0" id="svg_3" xlink:href="#a" fill-rule="nonzero" fill="#63c9e0"/>
+   <g id="svg_4" mask="url(#b)" fill="#2D2D42">
+    <path id="svg_5" d="m-250,-240l30,0l0,30l-30,0l0,-30z" fill-rule="nonzero"/>
+   </g>
+  </g>
+ </g>
+</svg>
