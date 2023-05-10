@@ -282,12 +282,19 @@ input:checked ~ a label:hover {
     background-color: var(--white);
 }
 
-.about__title {
+.ttl-cap {
+    margin-bottom: 90px;
+}
+
+.ttl-cap--about {
+    margin-bottom: 85px;
+}
+
+.ttl-cap__title {
     margin-bottom: var(--gap);
 }
 
-.about__caption {
-    margin-bottom: 85px;
+.ttl-cap__caption {
     max-width: 780px;
     min-height: 40px;
     font-size: 30px;
@@ -373,19 +380,6 @@ input:checked ~ a label:hover {
 
 .work {
     margin-bottom: 100px;
-}
-
-.work__title {
-    margin-bottom: 25px;
-}
-
-.work__subscription {
-    margin-bottom: 90px;
-    max-width: 980px;
-    min-height: 40px;
-    font-size: 30px;
-    line-height: 1.33;
-    color: var(--dark);
 }
 
 .work__shell {
@@ -492,19 +486,6 @@ input:checked ~ a label:hover {
 
 .inside__wrapper {
     margin-right: 0;
-}
-
-.inside__title {
-    margin-bottom: 25px;
-}
-
-.inside__subscription {
-    margin-bottom: 90px;
-    max-width: 980px;
-    min-height: 40px;
-    font-size: 30px;
-    line-height: 1.33;
-    color: var(--dark);
 }
 
 .inside__block {
