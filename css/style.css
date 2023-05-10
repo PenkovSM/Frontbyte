@@ -85,21 +85,28 @@ button {
     margin: 0 200px;
 }
 
-h2 {
-    margin: 0;
+.title {
     font-size: 60px;
     line-height: 65px;
     letter-spacing: -0.75px;
     font-weight: 900;
+    color: var(--light);
 }
 
-h3 {
-    margin: 0;
+.title--black {
+    color: var(--dark);
 }
 
-.title--grey {
+.title--silver {
     color: var(--silver);
     margin-bottom: 75px;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+    
 }
 
 /* header  */
@@ -222,8 +229,6 @@ input:checked ~ a label:hover {
 }
 
 .start__title {
-    margin: 0;
-    color: var(--light);
     margin-bottom: var(--gap);
 }
 
@@ -593,9 +598,7 @@ input:checked ~ a label:hover {
 }
 
 .footer__title {
-    margin: 0;
     margin-right: 25px;
-    color: var(--light);
 }
 
 .social {
