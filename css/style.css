@@ -120,7 +120,7 @@ h3 {
     display: flex;
     align-items: center;
     margin-bottom: 92px;
-    padding: 40px 60px 0 40px;
+    padding: 40px 50px 0 40px;
 }
 
 .header__logo {
@@ -180,7 +180,7 @@ h3 {
 }
 
 .language__item:not(:last-child) {
-    margin-right: 35px;
+    margin-right: 17px;
 }
 
 .language__item {
@@ -193,22 +193,20 @@ li label {
     padding: 10px;
     border-radius: 50%;
     cursor: pointer;
-    transition: color 0.3s ease-in-out;
+    outline: 1px solid transparent;
+    transition: color 0.3s ease-in-out, outline 0.3s ease-in-out;
 }
 
 li label:hover {
     color: var(--blue);
+    outline: 1px solid var(--blue);
 }
 
-#no:checked ~ li label[for="no"],
-#en:checked ~ li label[for="en"],
-#ru:checked ~ li label[for="ru"] {
+input:checked ~ a label {
     outline: 1px solid var(--light);
 }
 
-#no:checked ~ li label[for="no"]:hover,
-#en:checked ~ li label[for="en"]:hover,
-#ru:checked ~ li label[for="ru"]:hover {
+input:checked ~ a label:hover {
     color: var(--light);
 }
 
