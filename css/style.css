@@ -304,6 +304,11 @@ input:checked ~ a label:hover {
 
 .expertise {
     display: flex;
+    flex-wrap: wrap;
+}
+
+.expertise__item {
+    min-width: 240px;
     margin-bottom: 70px;
 }
 
