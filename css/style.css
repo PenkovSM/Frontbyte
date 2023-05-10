@@ -109,9 +109,6 @@ h3 {
     top: 0;
     left: 0;
     right: 0;
-    margin-bottom: 100px;
-    /* background-color: rgba(255, 255, 255, 0.2); */
-    /* background-color: #000; */
     z-index: 1;
 }
 
@@ -119,8 +116,7 @@ h3 {
     z-index: 1;
     display: flex;
     align-items: center;
-    margin-bottom: 92px;
-    padding: 40px 50px 0 40px;
+    padding: 40px 50px 40px 40px;
 }
 
 .header__logo {
@@ -239,11 +235,12 @@ input:checked ~ a label:hover {
     color: var(--light);
 }
 
-.start__link {
+.drop-btn {
     position: absolute;
     bottom: 0;
     left: 0;
-    padding: 25px 50px 25px 200px;
+    padding: 25px 100px 25px 200px;
+    text-align: start;
     font-size: 20px;
     line-height: 30px;
     color: var(--light);
@@ -252,18 +249,18 @@ input:checked ~ a label:hover {
     border: solid 1px rgba(255,255,255, 0.1);
     background-image: url(../img/header-link-arrow--white.svg);
     background-repeat: no-repeat;
-    background-position: right 10% center;
+    background-position: right 60px center;
     transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, border 0.3s ease-in-out;
 }
 
-.start__link:focus {
+.drop-btn:focus {
     border: solid 1px var(--blue);
 }
-.start__link:hover {
+.drop-btn:hover {
     background-color: rgba(255, 255, 255, 0.2);
 }
 
-.start__link:active {
+.drop-btn:active {
     background-color: rgba(255, 255, 255, 0.4);
     border: solid 1px rgba(255,255,255, 0.1);
 }
@@ -705,34 +702,25 @@ input:checked ~ a label:hover {
     color: blue;
 }
 
-.footer__link {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    padding: 25px 50px 25px 200px;
-    font-size: 20px;
-    line-height: 30px;
+.drop-btn--blue {
+    border: 1px solid transparent;
     color: var(--light);
-    width: 50%;
-    min-height: 80px;
     background-color: var(--blue);
     background-image: url(../img/header-link-arrow--white.svg);
-    background-repeat: no-repeat;
-    background-position: right 10% center;
     transition: 0.3s ease-in-out;
 }
 
-.footer__link:focus {
+.drop-btn--blue:focus {
     border: solid 1px var(--light);
 }
-.footer__link:hover {
+.drop-btn--blue:hover {
     border: solid 1px var(--blue);
     color: var(--blue);
     background-color: var(--light);
     background-image: url(../img/header-link-arrow--blue.svg);
 }
 
-.footer__link:active {
+.drop-btn--blue:active {
     background-position: right 7% center;
 }
 
