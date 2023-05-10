@@ -302,16 +302,16 @@ input:checked ~ a label:hover {
     color: var(--dark);
 }
 
-.icon {
+.expertise {
     display: flex;
     margin-bottom: 70px;
 }
 
-.icon__item:not(:last-child) {
+.expertise__item:not(:last-child) {
     margin-right: 60px;
 }
 
-.icon__background {
+.expertise__background {
     position: relative;
     margin-bottom: var(--gap);
     width: 90px;
@@ -320,22 +320,22 @@ input:checked ~ a label:hover {
     background-color: #63c9e0;
 }
 
-.icon__background--orange {
+.expertise__background--orange {
     background-color: #f47e3d;
 }
 
-.icon__background--pink {
+.expertise__background--pink {
     background-color: #d04b9b;
 }
 
-.icon__image {
+.expertise__image {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.icon__descr {
+.expertise__descr {
     max-width: 240px;
     min-height: 90px;
     font-size: 20px;
