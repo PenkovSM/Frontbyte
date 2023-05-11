@@ -389,7 +389,6 @@ input:checked ~ a label:hover {
 }
 
 .project {
-    padding-top: 360px;
     margin-bottom: 70px;
     width: 49.15%;
     background-repeat: no-repeat;
@@ -397,9 +396,25 @@ input:checked ~ a label:hover {
 }
 
 .project--big {
+    position: relative;
     padding: 20px;
     width: 100%;
     min-height: 600px;
+}
+
+.project__picture {
+    display: block;
+    margin-bottom: 40px;
+}
+
+.project__picture--big {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.project__picture img{
+    object-fit: cover;
 }
 
 .project__title {
@@ -426,37 +441,11 @@ input:checked ~ a label:hover {
     color: var(--light);
 }
 
-.project--birdieeyes {
-    margin-bottom: 20px;
-    background-image: url(../img/work-vid-birdieeyes@2x.jpg);
-    background-size: cover;
-}
-
-.project--upsport {
-    background-image: url(../img/work-img-upsport@2x.jpg);
-}
-
-.project--xland {
-    background-image: url(../img/work-img-xland@2x.jpg);
-}
-
-.project--phonero {
-    background-image: url(../img/work-img-phonero@2x.jpg);
-}
-
-.project--kongsberg {
-    background-image: url(../img/work-img-kongsberg@2x.jpg);
-}
-
-.project--team {
-    background-image: url(../img/work-img-team-home@2x.jpg);
-    background-size: cover;
-}
-
 .project__card {
     padding: 40px;
     max-width: 380px;
     min-height: 380px;
+    z-index: 1;
 }
 
 .project__card--left {
