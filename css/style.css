@@ -447,14 +447,13 @@ input:checked ~ a label:hover {
 }
 
 .sticker {
-    /* padding: 40px; */
     max-width: 380px;
-    min-height: 380px;
     z-index: 1;
 }
 
-.sticker--padding {
+.project--big .sticker {
     padding: 40px;
+    min-height: 380px;
 }
 
 .sticker--left {
