@@ -423,7 +423,7 @@ input:checked ~ a label:hover {
     object-fit: cover;
 }
 
-.project__title {
+.sticker__title {
     margin-bottom: var(--gap);
     max-width: 300px;
     min-height: 20px;
@@ -434,26 +434,30 @@ input:checked ~ a label:hover {
     color: var(--dark);
 }
 
-.project__caption {
+.sticker__caption {
     max-width: 440px;
     font-size: 30px;
     line-height: 1.33;
     color: var(--dark);
 }
 
-.project__title--white,
-.project__caption--white {
+.sticker__title--white,
+.sticker__caption--white {
     color: var(--light);
 }
 
-.project__card {
-    padding: 40px;
+.sticker {
+    /* padding: 40px; */
     max-width: 380px;
     min-height: 380px;
     z-index: 1;
 }
 
-.project__card--left {
+.sticker--padding {
+    padding: 40px;
+}
+
+.sticker--left {
     background-color: var(--blue);
 }
 
@@ -468,7 +472,7 @@ input:checked ~ a label:hover {
     justify-content: flex-end;
 }
 
-.project__card--right {
+.sticker--right {
     background-color: var(--light);
 }
 
@@ -499,7 +503,7 @@ input:checked ~ a label:hover {
     background-size: cover;
 }
 
-.project__card--inside {
+.sticker--inside {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -508,11 +512,11 @@ input:checked ~ a label:hover {
     background-color: var(--light);
 }
 
-.project__card--inside .project__caption {
+.sticker--inside .sticker__caption {
     margin-bottom: 55px;
 }
 
-.project__img {
+.sticker__img {
     width: 50px;
     height: 26px;
 }
