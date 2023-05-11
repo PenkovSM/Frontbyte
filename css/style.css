@@ -365,11 +365,6 @@ input:checked ~ a label:hover {
     color: var(--dark);
 }
 
-.do-list__item:nth-child(1),
-.do-list__item:nth-child(2) {
-    margin-bottom: 20px;
-}
-
 .do-list__item::before {
     content: "";
     position: absolute;
@@ -393,7 +388,7 @@ input:checked ~ a label:hover {
     justify-content: space-between;
 }
 
-.block {
+.project {
     padding-top: 360px;
     margin-bottom: 70px;
     width: 49.15%;
@@ -401,13 +396,13 @@ input:checked ~ a label:hover {
     background-size: contain;
 }
 
-.block--big {
+.project--big {
     padding: 20px;
     width: 100%;
     min-height: 600px;
 }
 
-.block__title {
+.project__title {
     margin-bottom: var(--gap);
     max-width: 300px;
     min-height: 20px;
@@ -418,7 +413,7 @@ input:checked ~ a label:hover {
     color: var(--dark);
 }
 
-.block__caption {
+.project__caption {
     max-width: 300px;
     min-height: 240px;
     font-size: 30px;
@@ -426,45 +421,45 @@ input:checked ~ a label:hover {
     color: var(--dark);
 }
 
-.block__title--white,
-.block__caption--white {
+.project__title--white,
+.project__caption--white {
     color: var(--light);
 }
 
-.block--birdieeyes {
+.project--birdieeyes {
     margin-bottom: 20px;
     background-image: url(../img/work-vid-birdieeyes@2x.jpg);
     background-size: cover;
 }
 
-.block--upsport {
+.project--upsport {
     background-image: url(../img/work-img-upsport@2x.jpg);
 }
 
-.block--xland {
+.project--xland {
     background-image: url(../img/work-img-xland@2x.jpg);
 }
 
-.block--phonero {
+.project--phonero {
     background-image: url(../img/work-img-phonero@2x.jpg);
 }
 
-.block--kongsberg {
+.project--kongsberg {
     background-image: url(../img/work-img-kongsberg@2x.jpg);
 }
 
-.block--team {
+.project--team {
     background-image: url(../img/work-img-team-home@2x.jpg);
     background-size: cover;
 }
 
-.block__card {
+.project__card {
     padding: 40px;
     max-width: 380px;
     min-height: 380px;
 }
 
-.block__card--left {
+.project__card--left {
     background-color: var(--blue);
 }
 
@@ -479,7 +474,7 @@ input:checked ~ a label:hover {
     justify-content: flex-end;
 }
 
-.block__card--right {
+.project__card--right {
     background-color: var(--light);
 }
 
@@ -493,14 +488,14 @@ input:checked ~ a label:hover {
     margin-right: 0;
 }
 
-.inside__block {
+.inside__project {
     position: relative;
     padding: 0;
     background-image: url(../img/inside-press@2x.jpg);
     background-size: cover;
 }
 
-.block__card--inside {
+.project__card--inside {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -509,11 +504,11 @@ input:checked ~ a label:hover {
     background-color: var(--light);
 }
 
-.block__card--inside .block__caption {
+.project__card--inside .project__caption {
     margin-bottom: 55px;
 }
 
-.block__img {
+.project__img {
     width: 50px;
     height: 26px;
 }
