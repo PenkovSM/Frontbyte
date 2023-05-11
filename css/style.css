@@ -379,7 +379,7 @@ input:checked ~ a label:hover {
 /* work  */
 
 .work {
-    margin-bottom: 100px;
+    margin-bottom: 30px;
 }
 
 .work__shell {
@@ -390,7 +390,7 @@ input:checked ~ a label:hover {
 
 .project {
     margin-bottom: 70px;
-    width: 49.15%;
+    width: calc((100% - 20px) / 2);
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -400,6 +400,11 @@ input:checked ~ a label:hover {
     padding: 20px;
     width: 100%;
     min-height: 600px;
+    margin-bottom: 0;
+}
+
+.project--birdieeyes {
+    margin-bottom: 20px;
 }
 
 .project__picture {
@@ -411,6 +416,7 @@ input:checked ~ a label:hover {
     position: absolute;
     top: 0;
     left: 0;
+    margin-bottom: 0;
 }
 
 .project__picture img{
@@ -429,8 +435,7 @@ input:checked ~ a label:hover {
 }
 
 .project__caption {
-    max-width: 300px;
-    min-height: 240px;
+    max-width: 440px;
     font-size: 30px;
     line-height: 1.33;
     color: var(--dark);
@@ -468,6 +473,10 @@ input:checked ~ a label:hover {
 }
 
 /* team  */
+
+.team {
+    margin-bottom: 100px;
+}
 
 .team__shell {
     display: flex;
