@@ -16,7 +16,7 @@
 <body>
     <!-- header  -->
     <header class="header">
-        <div class="container container--header">
+        <div class="container">
             <div class="header__menu">
                 <a href="#" class="header__logo">
                     <img src="img/logo.svg" alt="logo">
@@ -44,55 +44,75 @@
                     </ul>
                 </nav>
                 <ul class="language">
-                    <input type="radio" id="no" name="language" class="language__input">
-                    <input type="radio" id="en" name="language" class="language__input" checked>
-                    <input type="radio" id="ru" name="language" class="language__input">
                     <li class="language__item">
-                        <label for="no">No</label>
+                            <input type="radio" id="no" name="language" class="language__input">
+                            <a href="javascript:void(0)" class="language__link">
+                                <label for="no">No</label>
+                            </a>
                     </li>
                     <li class="language__item">
-                        <label for="en">En</label>
+                        <input type="radio" id="en" name="language" class="language__input" checked>
+                        <a href="javascript:void(0)" class="language__link">
+                            <label for="en">En</label>
+                        </a>
                     </li>
                     <li class="language__item">
-                        <label for="ru">Ru</label>
+                        <input type="radio" id="ru" name="language" class="language__input">
+                        <a href="javascript:void(0)" class="language__link">
+                            <label for="ru">Ru</label>
+                        </a>
                     </li>
                 </ul>
             </div>
-            <div class="wrapper header__wrapper">
-                <h2 class="header__title">We&nbsp;provide digital services and develop our own products in&nbsp;sports and iHealth industry</h2>
-                <p class="header__subscription">We&nbsp;put technology and sport together to&nbsp;create the world&rsquo;s most efficient and popular sports apps.</p>
-            </div>
-            <a href="#" class="header__link">Drop us a line</a>
         </div>
     </header>
     <!-- main  -->
     <main class="main">
+        <!-- start  -->
+        <section class="start">
+            <div class="container container--start">
+                <div class="wrapper">
+                    <h1 class="title start__title">We&nbsp;provide digital services and develop our own products in&nbsp;sports and iHealth industry</h1>
+                    <p class="start__subscription">We&nbsp;put technology and sport together to&nbsp;create the world&rsquo;s most efficient and popular sports apps.</p>
+                </div>
+                <button class="drop-btn">Drop us a line</button>
+            </div>
+        </section>
+        <!-- about  -->
         <section class="about">
             <div class="container">
                 <div class="wrapper wrapper--about">
-                    <h2 id="about" class="about__title">We&nbsp;combine high level of professionalism and individual&nbsp;approach</h2>
-                    <p class="about__caption">We&nbsp;have subject domain expertise in&nbsp;various aspects</p>
-                    <ul class="icon">
-                        <li class="icon__item">
-                            <div class="icon__background">
-                                <img src="img/about-document.svg" alt="document" class="icon__image">
+                    <div class="ttl-cap ttl-cap--about">
+                        <h2 id="about" class="title title--black ttl-cap__title">We&nbsp;combine high level of professionalism and individual&nbsp;approach</h2>
+                        <p class="ttl-cap__caption">We&nbsp;have subject domain expertise in&nbsp;various aspects</p>
+                    </div>
+                    <ul class="expertise">
+                        <li class="expertise__item">
+                            <div class="expertise__background">
+                                <picture class="expertise__picture">
+                                    <img width="50" height="52" src="img/about-document.svg" alt="Project management for simple and complex projects" class="expertise__image">
+                                </picture>
                             </div>
-                            <p class="icon__descr">Project management for simple and complex projects</p>
+                            <p class="expertise__descr">Project management for simple and complex projects</p>
                         </li>
-                        <li class="icon__item">
-                            <div class="icon__background icon__background--orange">
-                                <img src="img/about-hire.svg" alt="" class="icon__image">
+                        <li class="expertise__item">
+                            <div class="expertise__background expertise__background--orange">
+                                <picture class="expertise__picture">
+                                    <img width="24" height="59" src="img/about-hire.svg" alt="Management for hire" class="expertise__image">
+                                </picture>
                             </div>
-                            <p class="icon__descr">Management for hire</p>
+                            <p class="expertise__descr">Management for hire</p>
                         </li>
-                        <li class="icon__item">
-                            <div class="icon__background icon__background--pink">
-                                <img src="img/about-laptop.svg" alt="laptop" class="icon__image">
+                        <li class="expertise__item">
+                            <div class="expertise__background expertise__background--pink">
+                                <picture class="expertise__picture">
+                                    <img width="56" height="43" src="img/about-laptop.svg" alt="Digital transformation" class="expertise__image">
+                                </picture>
                             </div>
-                            <p class="icon__descr">Digital transformation</p>
+                            <p class="expertise__descr">Digital transformation</p>
                         </li>
                     </ul>
-                    <h2 class="title--grey">What We Do</h2>
+                    <h2 class="title title--silver">What We Do</h2>
                     <ul class="do-list">
                         <li class="do-list__item">
                             Development and support of&nbsp;new and existing software systems
@@ -126,39 +146,74 @@
         <section class="work">
             <div class="container">
                 <div class="wrapper">
-                    <h2 id="projects" class="work__title">Our Work</h2>
-                    <p class="work__subscription">We&nbsp;change the way businesses and industries operate.</p>
+                    <div class="ttl-cap">
+                        <h2 id="projects" class="title title--black ttl-cap__title">Our Work</h2>
+                        <p class="ttl-cap__caption">We&nbsp;change the way businesses and industries operate.</p>
+                    </div>
                 </div>
                 <div class="work__shell">
-                    <div class="block block--big block--birdieeyes">
+                    <div class="project project--big project--birdieeyes">
+                        <picture class="project__picture project__picture--big">
+                            <img width="1180" height="600" src="img/work-vid-birdieeyes@2x.jpg" alt="upsport">
+                        </picture>
                         <div class="wrapper wrapper--left">
-                            <div class="block__card block__card--left">
-                                <h3 class="block__title block__title--white">BirdieEyes</h3>
-                                <div class="block__caption block__caption--white">We have introduced AR technology into one of the most traditional games and made it even more interesting</div>
+                            <div class="sticker sticker--padding sticker--left">
+                                <h3 class="sticker__title sticker__title--white">BirdieEyes</h3>
+                                <div class="sticker__caption sticker__caption--white">We have introduced AR technology into one of the most traditional games and made it even more interesting</div>
                             </div>
                         </div>
                     </div>
-                    <div id="services" class="block block--upsport">
-                        <h3 class="block__title block__title--black">UpSport</h3>
-                        <p class="block__caption block__caption--black">ILive communication platform that has changed the game for sport clubs, parents and their kids</p>
+                    <div id="services" class="project project--upsport">
+                        <picture class="project__picture">
+                            <img width="580" height="320" src="img/work-img-upsport@2x.jpg" alt="upsport">
+                        </picture>
+                        <div class="sticker">
+                            <h3 class="sticker__title">UpSport</h3>
+                            <p class="sticker__caption">ILive communication platform that has changed the game for sport clubs, parents and their kids</p>
+                        </div>
                     </div>
-                    <div class="block block--xland">
-                        <h3 class="block__title block__title--black">XLand</h3>
-                        <p class="block__caption block__caption--black">Digital presence for the first indoor activity park in&nbsp;Norway</p>
+                    <div class="project project--xland">
+                        <picture class="project__picture">
+                            <img width="580" height="320" src="img/work-img-xland@2x.jpg" alt="upsport">
+                        </picture>
+                        <div class="sticker">
+                            <h3 class="sticker__title">XLand</h3>
+                            <p class="sticker__caption">Digital presence for the first indoor activity park in&nbsp;Norway</p>
+                        </div>
                     </div>
-                    <div class="block block--phonero">
-                        <h3 class="block__title block__title--black">phonero</h3>
-                        <p class="block__caption block__caption--black">Interfaces for the cloud based switchboard applications as&nbsp;well as&nbsp;various desktop and mobile applications</p>
+                    <div class="project project--phonero">
+                        <picture class="project__picture">
+                            <img width="580" height="320" src="img/work-img-phonero@2x.jpg" alt="upsport">
+                        </picture>
+                        <div class="sticker">
+                            <h3 class="sticker__title">phonero</h3>
+                            <p class="sticker__caption">Interfaces for the cloud based switchboard applications as&nbsp;well as&nbsp;various desktop and mobile applications</p>
+                        </div>
                     </div>
-                    <div class="block block--kongsberg">
-                        <h3 class="block__title block__title--black">Kongsberg Group</h3>
-                        <p class="block__caption block__caption--black">Groundbreaking defence and aerospace systems</p>
+                    <div class="project project--kongsberg">
+                        <picture class="project__picture">
+                            <img width="580" height="320" src="img/work-img-kongsberg@2x.jpg" alt="upsport">
+                        </picture>
+                        <div class="sticker">
+                            <h3 class="sticker__title">Kongsberg Group</h3>
+                            <p class="sticker__caption">Groundbreaking defence and aerospace systems</p>
+                        </div>
                     </div>
-                    <div id="team" class="block block--big block--team">
+                </div>
+            </div>
+        </section>
+        <!-- team  -->
+        <section class="team">
+            <div class="container">
+                <div class="team__shell">
+                    <div id="team" class="project project--big project--team">
+                        <picture class="project__picture project__picture--big">
+                            <img width="1180" height="600" src="img/work-img-team-home@2x.jpg" alt="upsport">
+                        </picture>
                         <div class="wrapper wrapper--right">
-                            <div class="block__card block__card--right">
-                                <h3 class="block__title">our team</h3>
-                                <div class="block__caption">We&nbsp;are united by&nbsp;our passion to&nbsp;create unique and efficient digital products</div>
+                            <div class="sticker sticker--padding sticker--right">
+                                <h3 class="sticker__title">our team</h3>
+                                <div class="sticker__caption">We&nbsp;are united by&nbsp;our passion to&nbsp;create unique and efficient digital products</div>
                             </div>
                         </div>
                     </div>
@@ -169,13 +224,15 @@
         <section class="inside">
             <div class="container">
                 <div class="wrapper inside__wrapper">
-                    <h2 id="events" class="inside__title">Inside Frontbyte</h2>
-                    <p class="inside__subscription">We&nbsp;change the way businesses and industries operate.</p>
-                    <div class="block inside__block block--big">
-                        <div class="block__card block__card--inside">
-                            <h3 class="block__title">Press about us</h3>
-                            <div class="block__caption">AR&nbsp;golf platform BirdieEyes raises $300 million at&nbsp;$2.7 billion valuation</div>
-                            <img src="img/inside-tc-logo.png" alt="TC" class="block__img">
+                    <div class="ttl-cap">
+                        <h2 id="events" class="title title--black ttl-cap__title">Inside Frontbyte</h2>
+                        <p class="ttl-cap__caption">We&nbsp;change the way businesses and industries operate.</p>
+                    </div>
+                    <div class="project inside__project project--big">
+                        <div class="sticker sticker--padding sticker--inside">
+                            <h3 class="sticker__title">Press about us</h3>
+                            <div class="sticker__caption">AR&nbsp;golf platform BirdieEyes raises $300 million at&nbsp;$2.7 billion valuation</div>
+                            <img src="img/inside-tc-logo.png" alt="TC" class="sticker__img">
                         </div>
                     </div>
                 </div>
@@ -204,7 +261,7 @@
         <div class="container container--footer">
             <div class="wrapper footer__wraper">
                 <div class="footer__contact">
-                    <h2 id="contacts" class="footer__title">Contacts</h2>
+                    <h2 id="contacts" class="footer__title title">Contacts</h2>
                     <ul class="social">
                         <li class="social__item">
                             <a href="" class="social__link social__link--linkedin"></a>
@@ -236,7 +293,8 @@
                 </div>
             </div>
             <div class="footer__row">
-                <a href="" class="footer__link">Drop us a line</a>
+                <!-- <a href="" class="footer__link">Drop us a line</a> -->
+                <button class="drop-btn drop-btn--blue">Drop us a line</button>
                 <p class="footer__copy">© 2008–2018 Frontbyte</p>
             </div>
             <svg width="50" height="50" class="footer__svg footer__svg--blue">
