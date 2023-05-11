@@ -192,7 +192,7 @@ h3 {
     line-height: 20px;
 }
 
-li label {
+.language__item label {
     padding: 10px;
     border-radius: 50%;
     cursor: pointer;
@@ -200,16 +200,16 @@ li label {
     transition: color 0.3s ease-in-out, outline 0.3s ease-in-out;
 }
 
-li label:hover {
+.language__item label:hover {
     color: var(--blue);
     outline: 1px solid var(--blue);
 }
 
-input:checked ~ a label {
+input:checked ~ .language__link label {
     outline: 1px solid var(--light);
 }
 
-input:checked ~ a label:hover {
+input:checked ~ .language__link label:hover {
     color: var(--light);
 }
 
@@ -497,17 +497,19 @@ input:checked ~ a label:hover {
 
 .inside__project {
     position: relative;
+    margin-bottom: 80px;
     padding: 0;
     background-image: url(../img/inside-press@2x.jpg);
     background-size: cover;
 }
 
-.sticker--inside {
+.project--big .sticker--inside {
     position: absolute;
     bottom: 0;
     left: 0;
     transform: translateX(-50%);
-    border-bottom: 1px solid var(--silver);
+    padding-left: 0;
+    min-width: 400px;
     background-color: var(--light);
 }
 
@@ -518,6 +520,40 @@ input:checked ~ a label:hover {
 .sticker__img {
     width: 50px;
     height: 26px;
+}
+
+.slider {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+}
+
+.slider__item:not(:last-child) {
+    margin-right: 9px;
+}
+
+.slider__input {
+    display: none;
+}
+
+.slider__label {
+    display: block;
+    padding-top: 20px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.slider__button {
+    background-color: var(--silver);
+    height: 1px;
+    width: 65px;
+    cursor: pointer;
+}
+
+.slider__input:checked ~ label div {
+    background-color: var(--dark);
 }
 
 .news__title {
