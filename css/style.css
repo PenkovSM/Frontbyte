@@ -478,6 +478,12 @@ input:checked ~ a label:hover {
     background-color: var(--light);
 }
 
+/* team  */
+
+.team__shell {
+    display: flex;
+}
+
 /* inside  */
 
 .inside {
