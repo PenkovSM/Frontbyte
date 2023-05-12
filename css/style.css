@@ -112,7 +112,7 @@ h3 {
 /* header  */
 
 .header {
-    position: fixed;
+    position: absolute;
     top: 0;
     width: 100%;
     z-index: 2;
@@ -265,12 +265,12 @@ input:checked ~ .language__link label:hover {
     font-size: 20px;
     line-height: 30px;
     color: var(--light);
-    width: 50%;
+    width: 49%;
     height: 80px;
     border: solid 1px rgba(255,255,255, 0.1);
     background-image: url(../img/header-link-arrow--white.svg);
     background-repeat: no-repeat;
-    background-position: right 60px center;
+    background-position: right 47px center;
     transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, border 0.3s ease-in-out;
 }
 
@@ -294,23 +294,23 @@ input:checked ~ .language__link label:hover {
 
 .wrapper--about {
     margin: 0;
-    padding: 90px 100px 137px 200px;
+    padding: 90px 100px 98px 200px;
     background-color: var(--white);
 }
 
-.ttl-cap {
+.topic {
     margin-bottom: 90px;
 }
 
-.ttl-cap--about {
+.topic--about {
     margin-bottom: 85px;
 }
 
-.ttl-cap__title {
+.topic__title {
     margin-bottom: var(--gap);
 }
 
-.ttl-cap__caption {
+.topic__caption {
     max-width: 780px;
     min-height: 40px;
     font-size: 30px;
@@ -398,6 +398,10 @@ input:checked ~ .language__link label:hover {
     margin-bottom: 30px;
 }
 
+.work .topic__title {
+    margin-bottom: 25px;
+}
+
 .work__shell {
     display: flex;
     flex-wrap: wrap;
@@ -413,14 +417,14 @@ input:checked ~ .language__link label:hover {
 
 .project--big {
     position: relative;
-    padding: 20px;
+    padding-bottom: 20px;
     width: 100%;
     min-height: 600px;
     margin-bottom: 0;
 }
 
 .project--birdieeyes {
-    margin-bottom: 20px;
+    margin-bottom: 19px;
 }
 
 .project__picture {
@@ -437,17 +441,18 @@ input:checked ~ .language__link label:hover {
 
 .project__picture img{
     object-fit: cover;
+    display: block;
 }
 
 .sticker__title {
     margin-bottom: var(--gap);
     max-width: 300px;
-    min-height: 20px;
     font-size: 13px;
     font-weight: 900;
     line-height: 1.54;
     letter-spacing: 1.73px;
     color: var(--dark);
+    text-transform: uppercase;
 }
 
 .sticker__caption {
@@ -463,17 +468,22 @@ input:checked ~ .language__link label:hover {
 }
 
 .sticker {
-    max-width: 380px;
+    max-width: 440px;
     z-index: 1;
 }
 
 .project--big .sticker {
     padding: 40px;
     min-height: 380px;
+    max-width: 380px;
 }
 
 .sticker--left {
     background-color: var(--blue);
+}
+
+.sticker--left .sticker__title {
+    margin-bottom: 39px;
 }
 
 .wrapper--left,
@@ -489,6 +499,10 @@ input:checked ~ .language__link label:hover {
 
 .sticker--right {
     background-color: var(--light);
+}
+
+.sticker--right .sticker__title {
+    margin-bottom: 50px;
 }
 
 /* team  */
@@ -511,6 +525,10 @@ input:checked ~ .language__link label:hover {
     margin-right: 0;
 }
 
+.inside .topic__title {
+    margin-bottom: 25px;
+}
+
 .inside__project {
     position: relative;
     margin-bottom: 80px;
@@ -531,6 +549,7 @@ input:checked ~ .language__link label:hover {
 
 .sticker--inside .sticker__caption {
     margin-bottom: 55px;
+    max-width: 340px;
 }
 
 .sticker__img {
@@ -654,7 +673,7 @@ input:checked ~ .language__link label:hover {
     align-items: center;
     justify-content: space-between;
     margin-bottom: 75px;
-    max-width: 640px;
+    max-width: 636px;
 }
 
 .footer__title {
@@ -788,7 +807,7 @@ input:checked ~ .language__link label:hover {
     bottom: 0;
     right: 0;
     padding: 25px 50px 25px 120px;
-    width: 50%;
+    width: 51%;
     min-height: 80px;
     font-size: 20px;
     line-height: 1.5;
