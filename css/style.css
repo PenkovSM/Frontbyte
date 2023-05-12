@@ -112,12 +112,28 @@ h3 {
 /* header  */
 
 .header {
-    position: absolute;
+    position: fixed;
     top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1;
+    width: 100%;
+    z-index: 2;
+    transition: background-color 0.3s ease-in-out, padding 0.3s ease-in-out;
 }
+
+.header--moved {
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 5px 16px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    animation: slidedown 0.35s ease-out;
+}
+
+@keyframes slidedown {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
 
 .header__menu {
     z-index: 1;
