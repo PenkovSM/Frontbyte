@@ -584,12 +584,12 @@ input:checked ~ .language__link label:hover {
 }
 
 .news__item {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     max-width: 280px;
     min-height: 100px;
 }
 
-.news__item:not(:last-child) {
+.news__item:not(:nth-child(3n)) {
     margin-right: 120px;
 }
 
