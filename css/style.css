@@ -622,6 +622,7 @@ input:checked ~ .language__link label:hover {
 .container--footer {
     position: relative;
     padding-top: 100px;
+    padding-bottom: 80px;
     background-color: #000;
     background-image: url(../img/footer-map.svg);
     background-repeat: no-repeat;
@@ -646,6 +647,11 @@ input:checked ~ .language__link label:hover {
 
 .social {
     display: flex;
+    margin: 0 -12px;
+}
+
+.social__item {
+    margin: 0 12px;
 }
 
 .social__link {
@@ -679,14 +685,6 @@ input:checked ~ .language__link label:hover {
     background-image: url(../img/footer-instagram--blue.svg);
 }
 
-.social__item:not(:last-child) {
-    margin-right: 25px;
-}
-
-.social__link {
-    
-}
-
 .footer__caption {
     margin-bottom: 90px;
     max-width: 381px;
@@ -699,10 +697,9 @@ input:checked ~ .language__link label:hover {
 .footer__row {
     display: flex;
     justify-content: space-between;
-    min-height: 80px;
 }
 
-.footer__geo {
+.location {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -711,7 +708,7 @@ input:checked ~ .language__link label:hover {
     min-height: 150px;
 }
 
-.footer__country {
+.location__country {
     margin-bottom: 20px;
     font-size: 20px;
     font-weight: bold;
@@ -719,32 +716,32 @@ input:checked ~ .language__link label:hover {
     color: #f4f4f7;
 }
 
-.footer__city,
-.footer__adress,
-.footer__mail,
-.footer__phone {
+.location__city,
+.location__adress,
+.location__mail,
+.location__phone {
     font-size: 15px;
     line-height: 1.67;
     color: #f4f4f7;
     transition: 0.3s ease-in-out;
 }
 
-.footer__mail {
+.location__mail {
     color: var(--blue);
 }
 
-.footer__mail:focus,
-.footer__phone:focus {
+.location__mail:focus,
+.location__phone:focus {
     outline: 1px solid var(--blue);
 }
 
-.footer__mail:hover,
-.footer__phone:hover {
+.location__mail:hover,
+.location__phone:hover {
     text-decoration: underline;
 }
 
-.footer__mail:active,
-.footer__phone:active {
+.location__mail:active,
+.location__phone:active {
     color: blue;
 }
 
