@@ -528,6 +528,7 @@ input:checked ~ .language__link label:hover {
     left: 0;
     width: 100%;
     display: flex;
+    overflow: hidden;
 }
 
 .slider__item:not(:last-child) {
@@ -541,15 +542,24 @@ input:checked ~ .language__link label:hover {
 .slider__label {
     display: block;
     padding-top: 20px;
-    width: 100%;
+    width: 65px;
     cursor: pointer;
 }
 
 .slider__button {
     background-color: var(--silver);
     height: 1px;
-    width: 65px;
+    width: 100%;
     cursor: pointer;
+    transition: background-color 0.1s ease-in-out;
+}
+
+.slider__label:hover .slider__button {
+    background-color: var(--dark);
+}
+
+.slider__label:active .slider__button {
+    background-color: grey;
 }
 
 .slider__input:checked ~ label div {
