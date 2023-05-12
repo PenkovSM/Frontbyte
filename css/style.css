@@ -566,6 +566,12 @@ input:checked ~ .language__link label:hover {
     background-color: var(--dark);
 }
 
+/* news  */
+
+.news {
+    margin-bottom: 60px;
+}
+
 .news__title {
     margin-bottom: 50px;
     max-width: 280px;
