@@ -123,17 +123,17 @@ h3 {
     background-color: rgba(0, 0, 0, 0.8);
     box-shadow: 0 5px 16px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);
-    animation: slidedown 0.35s ease-out;
+    /* animation: slidedown 0.35s ease-out; */
 }
 
-@keyframes slidedown {
+/* @keyframes slidedown {
     from {
       transform: translateY(-100%);
     }
     to {
       transform: translateY(0);
     }
-  }
+  } */
 
 .header__menu {
     z-index: 1;
@@ -224,7 +224,7 @@ h3 {
 }
 
 input:checked ~ .language__link label {
-    outline: 1px solid var(--light);
+    outline: 1px solid rgba(244,244,247, 0.2);
 }
 
 input:checked ~ .language__link label:hover {
@@ -479,7 +479,7 @@ input:checked ~ .language__link label:hover {
 .project--big .sticker {
     padding: 40px;
     max-width: 380px;
-    min-height: 380px;
+    height: 380px;
 }
 
 .sticker--left {
@@ -533,12 +533,17 @@ input:checked ~ .language__link label:hover {
     margin-bottom: 25px;
 }
 
+.inside__link {
+    display: block;
+    width: 100%;
+}
+
 .inside__project {
     position: relative;
     margin-bottom: 80px;
     padding: 0;
-    background-image: url(../img/inside-press.jpg);
-    background-size: cover;
+    /* background-image: url(../img/inside-press.jpg);
+    background-size: cover; */
 }
 
 .project--big .sticker--inside {
