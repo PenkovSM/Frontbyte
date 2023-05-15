@@ -240,7 +240,7 @@ input:checked ~ .language__link label:hover {
     padding-top: 172px;
     padding-bottom: 80px;
     min-height: 680px;
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url(../img/header-background@2x-min.png);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url(../img/header-background@2x-min.jpg);
     background-size: cover;
 }
 
@@ -533,7 +533,7 @@ input:checked ~ .language__link label:hover {
     position: relative;
     margin-bottom: 80px;
     padding: 0;
-    background-image: url(../img/inside-press@2x.jpg);
+    background-image: url(../img/inside-press.jpg);
     background-size: cover;
 }
 
