@@ -1,5 +1,5 @@
 var className = "header--moved";
-var scrollTrigger = 60;
+var scrollTrigger = 110;
 
 window.onscroll = function() {
   if (window.scrollY >= scrollTrigger || window.pageYOffset >= scrollTrigger) {
