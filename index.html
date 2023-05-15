@@ -82,9 +82,9 @@
         <section class="about">
             <div class="container">
                 <div class="wrapper wrapper--about">
-                    <div class="ttl-cap ttl-cap--about">
-                        <h2 id="about" class="title title--black ttl-cap__title">We&nbsp;combine high level of professionalism and individual&nbsp;approach</h2>
-                        <p class="ttl-cap__caption">We&nbsp;have subject domain expertise in&nbsp;various aspects</p>
+                    <div class="topic topic--about">
+                        <h2 id="about" class="title title--black topic__title">We&nbsp;combine high level of professionalism and individual&nbsp;approach</h2>
+                        <p class="topic__caption">We&nbsp;have subject domain expertise in&nbsp;various aspects</p>
                     </div>
                     <ul class="expertise">
                         <li class="expertise__item">
@@ -146,9 +146,9 @@
         <section class="work">
             <div class="container">
                 <div class="wrapper">
-                    <div class="ttl-cap">
-                        <h2 id="projects" class="title title--black ttl-cap__title">Our Work</h2>
-                        <p class="ttl-cap__caption">We&nbsp;change the way businesses and industries operate.</p>
+                    <div class="topic">
+                        <h2 id="projects" class="title title--black topic__title">Our Work</h2>
+                        <p class="topic__caption">We&nbsp;change the way businesses and industries operate.</p>
                     </div>
                 </div>
                 <div class="work__shell">
@@ -157,7 +157,7 @@
                             <img width="1180" height="600" src="img/work-vid-birdieeyes@2x.jpg" alt="upsport">
                         </picture>
                         <div class="wrapper wrapper--left">
-                            <div class="sticker sticker--padding sticker--left">
+                            <div class="sticker sticker--left">
                                 <h3 class="sticker__title sticker__title--white">BirdieEyes</h3>
                                 <div class="sticker__caption sticker__caption--white">We have introduced AR technology into one of the most traditional games and made it even more interesting</div>
                             </div>
@@ -169,7 +169,7 @@
                         </picture>
                         <div class="sticker">
                             <h3 class="sticker__title">UpSport</h3>
-                            <p class="sticker__caption">ILive communication platform that has changed the game for sport clubs, parents and their kids</p>
+                            <p class="sticker__caption">Live communication platform that has changed the game for sport clubs, parents and their kids</p>
                         </div>
                     </div>
                     <div class="project project--xland">
@@ -211,7 +211,7 @@
                             <img width="1180" height="600" src="img/work-img-team-home@2x.jpg" alt="upsport">
                         </picture>
                         <div class="wrapper wrapper--right">
-                            <div class="sticker sticker--padding sticker--right">
+                            <div class="sticker sticker--right">
                                 <h3 class="sticker__title">our team</h3>
                                 <div class="sticker__caption">We&nbsp;are united by&nbsp;our passion to&nbsp;create unique and efficient digital products</div>
                             </div>
@@ -224,35 +224,81 @@
         <section class="inside">
             <div class="container">
                 <div class="wrapper inside__wrapper">
-                    <div class="ttl-cap">
-                        <h2 id="events" class="title title--black ttl-cap__title">Inside Frontbyte</h2>
-                        <p class="ttl-cap__caption">We&nbsp;change the way businesses and industries operate.</p>
+                    <div class="topic">
+                        <h2 id="events" class="title title--black topic__title">Inside Frontbyte</h2>
+                        <p class="topic__caption">We&nbsp;change the way businesses and industries operate.</p>
                     </div>
                     <div class="project inside__project project--big">
-                        <div class="sticker sticker--padding sticker--inside">
-                            <h3 class="sticker__title">Press about us</h3>
-                            <div class="sticker__caption">AR&nbsp;golf platform BirdieEyes raises $300 million at&nbsp;$2.7 billion valuation</div>
-                            <img src="img/inside-tc-logo.png" alt="TC" class="sticker__img">
+                        <div class="sticker sticker--inside">
+                            <a href="javascript:void(0)" class="sticker__link">
+                                <h3 class="sticker__title">Press about us</h3>
+                            </a>
+                            <a href="javascript:void(0)" class="sticker__link">
+                                <div class="sticker__caption">AR&nbsp;golf platform BirdieEyes raises $300 million at&nbsp;$2.7 billion valuation</div>
+                            </a>
+                            <a href="javascript:void(0)" class="sticker__link">
+                                <img src="img/inside-tc-logo.png" alt="TC" class="sticker__img">
+                            </a>
+                            <ul class="slider">
+                                <li class="slider__item">
+                                    <input type="radio" id="button-1" name="slider" class="slider__input" checked>
+                                    <label for="button-1" class="slider__label">
+                                        <div class="slider__button"></div>
+                                    </label>
+                                </li>
+                                <li class="slider__item">
+                                    <input type="radio" id="button-2" name="slider" class="slider__input">
+                                    <label for="button-2" class="slider__label">
+                                        <div class="slider__button"></div>
+                                    </label>
+                                </li>
+                                <li class="slider__item">
+                                    <input type="radio" id="button-3" name="slider" class="slider__input">
+                                    <label for="button-3" class="slider__label">
+                                        <div class="slider__button"></div>
+                                    </label>
+                                </li>
+                                <li class="slider__item">
+                                    <input type="radio" id="button-4" name="slider" class="slider__input">
+                                    <label for="button-4" class="slider__label">
+                                        <div class="slider__button"></div>
+                                    </label>
+                                </li>
+                                <li class="slider__item">
+                                    <input type="radio" id="button-5" name="slider" class="slider__input">
+                                    <label for="button-5" class="slider__label">
+                                        <div class="slider__button"></div>
+                                    </label>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-                <div class="news">
-                    <h3 class="news__title">Latest news</h3>
-                    <ul class="news__list">
-                        <li class="news__item">
+            </div>
+        </section>
+        <section class="news">
+            <div class="container">
+                <h3 class="news__title">Latest news</h3>
+                <ul class="news__list">
+                    <li class="news__item">
+                        <a href="javascript:void(0)" class="news__link">
                             <p class="news__content">How to&nbsp;use email marketing to&nbsp;connect with your users</p>
-                            <time class="news__time">Dec 19, 2018</time>
-                        </li>
-                        <li class="news__item">
+                        </a>
+                        <time class="news__time">Dec 19, 2018</time>
+                    </li>
+                    <li class="news__item">
+                        <a href="javascript:void(0)" class="news__link">
                             <p class="news__content">How to&nbsp;use email marketing to&nbsp;connect with your users</p>
-                            <time class="news__time">Dec 19, 2018</time>
-                        </li>
-                        <li class="news__item">
+                        </a>
+                        <time class="news__time">Dec 19, 2018</time>
+                    </li>
+                    <li class="news__item">
+                        <a href="javascript:void(0)" class="news__link">
                             <p class="news__content">How to&nbsp;use email marketing to&nbsp;connect with your users</p>
-                            <time class="news__time">Dec 19, 2018</time>
-                        </li>
-                    </ul>
-                </div>
+                        </a>
+                        <time class="news__time">Dec 19, 2018</time>
+                    </li>
+                </ul>
             </div>
         </section>
     </main>
@@ -276,19 +322,19 @@
                 </div>
                 <p class="footer__caption">Our head office is&nbsp;located in&nbsp;Norway. Research and development center is&nbsp;located in&nbsp;Belarus.</p>
                 <div class="footer__row">
-                    <div class="footer__geo">
-                        <p class="footer__country">Norway</p>
-                        <p class="footer__city">Kristiansand</p>
-                        <p class="footer__adress">Vestre strandgate, 23, 4th and 6th floor N-4611</p>
-                        <a href="mailto:contact@frontbyte.no" class="footer__mail">contact@frontbyte.no</a>
-                        <a href="tel:+4741636983" class="footer__phone">+47 416 36 983</a>
+                    <div class="location">
+                        <p class="location__country">Norway</p>
+                        <p class="location__city">Kristiansand</p>
+                        <p class="location__adress">Vestre strandgate, 23, 4th and 6th floor N-4611</p>
+                        <a href="mailto:contact@frontbyte.no" class="location__mail">contact@frontbyte.no</a>
+                        <a href="tel:+4741636983" class="location__phone">+47 416 36 983</a>
                     </div>
-                    <div class="footer__geo">
-                        <p class="footer__country">Belarus</p>
-                        <p class="footer__city">Minsk</p>
-                        <p class="footer__adress">Dombrovskaya str., 9, оffice 10.2.2</p>
-                        <a href="mailto:contact@frontbyte.by" class="footer__mail">contact@frontbyte.by</a>
-                        <a href="tel:+375291393336" class="footer__phone">+375 29 1393336</a>
+                    <div class="location">
+                        <p class="location__country">Belarus</p>
+                        <p class="location__city">Minsk</p>
+                        <p class="location__adress">Dombrovskaya str., 9, оffice 10.2.2</p>
+                        <a href="mailto:contact@frontbyte.by" class="location__mail">contact@frontbyte.by</a>
+                        <a href="tel:+375291393336" class="location__phone">+375 29 1393336</a>
                     </div>
                 </div>
             </div>
@@ -305,5 +351,6 @@
             </svg>
         </div>
     </footer>
+    <!-- <script src="js/index.js"></script> -->
 </body>
 </html>

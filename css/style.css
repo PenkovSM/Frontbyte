@@ -114,10 +114,26 @@ h3 {
 .header {
     position: absolute;
     top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1;
+    width: 100%;
+    z-index: 2;
+    transition: background-color 0.3s ease-in-out, padding 0.3s ease-in-out;
 }
+
+.header--moved {
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 5px 16px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    animation: slidedown 0.35s ease-out;
+}
+
+@keyframes slidedown {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
 
 .header__menu {
     z-index: 1;
@@ -192,7 +208,7 @@ h3 {
     line-height: 20px;
 }
 
-li label {
+.language__item label {
     padding: 10px;
     border-radius: 50%;
     cursor: pointer;
@@ -200,16 +216,16 @@ li label {
     transition: color 0.3s ease-in-out, outline 0.3s ease-in-out;
 }
 
-li label:hover {
+.language__item label:hover {
     color: var(--blue);
     outline: 1px solid var(--blue);
 }
 
-input:checked ~ a label {
+input:checked ~ .language__link label {
     outline: 1px solid var(--light);
 }
 
-input:checked ~ a label:hover {
+input:checked ~ .language__link label:hover {
     color: var(--light);
 }
 
@@ -249,12 +265,12 @@ input:checked ~ a label:hover {
     font-size: 20px;
     line-height: 30px;
     color: var(--light);
-    width: 50%;
+    width: 49%;
     height: 80px;
     border: solid 1px rgba(255,255,255, 0.1);
     background-image: url(../img/header-link-arrow--white.svg);
     background-repeat: no-repeat;
-    background-position: right 60px center;
+    background-position: right 47px center;
     transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, border 0.3s ease-in-out;
 }
 
@@ -278,23 +294,23 @@ input:checked ~ a label:hover {
 
 .wrapper--about {
     margin: 0;
-    padding: 90px 100px 137px 200px;
+    padding: 90px 100px 98px 200px;
     background-color: var(--white);
 }
 
-.ttl-cap {
+.topic {
     margin-bottom: 90px;
 }
 
-.ttl-cap--about {
+.topic--about {
     margin-bottom: 85px;
 }
 
-.ttl-cap__title {
+.topic__title {
     margin-bottom: var(--gap);
 }
 
-.ttl-cap__caption {
+.topic__caption {
     max-width: 780px;
     min-height: 40px;
     font-size: 30px;
@@ -382,6 +398,10 @@ input:checked ~ a label:hover {
     margin-bottom: 30px;
 }
 
+.work .topic__title {
+    margin-bottom: 25px;
+}
+
 .work__shell {
     display: flex;
     flex-wrap: wrap;
@@ -397,14 +417,14 @@ input:checked ~ a label:hover {
 
 .project--big {
     position: relative;
-    padding: 20px;
+    padding-bottom: 20px;
     width: 100%;
     min-height: 600px;
     margin-bottom: 0;
 }
 
 .project--birdieeyes {
-    margin-bottom: 20px;
+    margin-bottom: 19px;
 }
 
 .project__picture {
@@ -421,17 +441,18 @@ input:checked ~ a label:hover {
 
 .project__picture img{
     object-fit: cover;
+    display: block;
 }
 
 .sticker__title {
     margin-bottom: var(--gap);
     max-width: 300px;
-    min-height: 20px;
     font-size: 13px;
     font-weight: 900;
     line-height: 1.54;
     letter-spacing: 1.73px;
     color: var(--dark);
+    text-transform: uppercase;
 }
 
 .sticker__caption {
@@ -447,18 +468,22 @@ input:checked ~ a label:hover {
 }
 
 .sticker {
-    /* padding: 40px; */
-    max-width: 380px;
-    min-height: 380px;
+    max-width: 440px;
     z-index: 1;
 }
 
-.sticker--padding {
+.project--big .sticker {
     padding: 40px;
+    min-height: 380px;
+    max-width: 380px;
 }
 
 .sticker--left {
     background-color: var(--blue);
+}
+
+.sticker--left .sticker__title {
+    margin-bottom: 39px;
 }
 
 .wrapper--left,
@@ -474,6 +499,10 @@ input:checked ~ a label:hover {
 
 .sticker--right {
     background-color: var(--light);
+}
+
+.sticker--right .sticker__title {
+    margin-bottom: 50px;
 }
 
 /* team  */
@@ -496,29 +525,86 @@ input:checked ~ a label:hover {
     margin-right: 0;
 }
 
+.inside .topic__title {
+    margin-bottom: 25px;
+}
+
 .inside__project {
     position: relative;
+    margin-bottom: 80px;
     padding: 0;
     background-image: url(../img/inside-press@2x.jpg);
     background-size: cover;
 }
 
-.sticker--inside {
+.project--big .sticker--inside {
     position: absolute;
     bottom: 0;
     left: 0;
     transform: translateX(-50%);
-    border-bottom: 1px solid var(--silver);
+    padding-left: 0;
+    min-width: 400px;
     background-color: var(--light);
 }
 
 .sticker--inside .sticker__caption {
     margin-bottom: 55px;
+    max-width: 340px;
 }
 
 .sticker__img {
     width: 50px;
     height: 26px;
+}
+
+.slider {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+}
+
+.slider__item:not(:last-child) {
+    margin-right: 9px;
+}
+
+.slider__input {
+    display: none;
+}
+
+.slider__label {
+    display: block;
+    padding-top: 20px;
+    width: 65px;
+    cursor: pointer;
+}
+
+.slider__button {
+    background-color: var(--silver);
+    height: 1px;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.1s ease-in-out;
+}
+
+.slider__label:hover .slider__button {
+    background-color: var(--dark);
+}
+
+.slider__label:active .slider__button {
+    background-color: grey;
+}
+
+.slider__input:checked ~ label div {
+    background-color: var(--dark);
+}
+
+/* news  */
+
+.news {
+    margin-bottom: 60px;
 }
 
 .news__title {
@@ -539,14 +625,17 @@ input:checked ~ a label:hover {
 }
 
 .news__item {
-    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    margin-right: 110px;
     max-width: 280px;
-    min-height: 100px;
 }
 
-.news__item:not(:last-child) {
+/* .news__item:not(:nth-child(3n)) {
     margin-right: 120px;
-}
+} */
 
 .news__content {
     margin-bottom: 20px;
@@ -568,6 +657,7 @@ input:checked ~ a label:hover {
 .container--footer {
     position: relative;
     padding-top: 100px;
+    padding-bottom: 80px;
     background-color: #000;
     background-image: url(../img/footer-map.svg);
     background-repeat: no-repeat;
@@ -583,7 +673,7 @@ input:checked ~ a label:hover {
     align-items: center;
     justify-content: space-between;
     margin-bottom: 75px;
-    max-width: 640px;
+    max-width: 636px;
 }
 
 .footer__title {
@@ -592,6 +682,11 @@ input:checked ~ a label:hover {
 
 .social {
     display: flex;
+    margin: 0 -12px;
+}
+
+.social__item {
+    margin: 0 12px;
 }
 
 .social__link {
@@ -625,14 +720,6 @@ input:checked ~ a label:hover {
     background-image: url(../img/footer-instagram--blue.svg);
 }
 
-.social__item:not(:last-child) {
-    margin-right: 25px;
-}
-
-.social__link {
-    
-}
-
 .footer__caption {
     margin-bottom: 90px;
     max-width: 381px;
@@ -645,10 +732,9 @@ input:checked ~ a label:hover {
 .footer__row {
     display: flex;
     justify-content: space-between;
-    min-height: 80px;
 }
 
-.footer__geo {
+.location {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -657,7 +743,7 @@ input:checked ~ a label:hover {
     min-height: 150px;
 }
 
-.footer__country {
+.location__country {
     margin-bottom: 20px;
     font-size: 20px;
     font-weight: bold;
@@ -665,32 +751,32 @@ input:checked ~ a label:hover {
     color: #f4f4f7;
 }
 
-.footer__city,
-.footer__adress,
-.footer__mail,
-.footer__phone {
+.location__city,
+.location__adress,
+.location__mail,
+.location__phone {
     font-size: 15px;
     line-height: 1.67;
     color: #f4f4f7;
     transition: 0.3s ease-in-out;
 }
 
-.footer__mail {
+.location__mail {
     color: var(--blue);
 }
 
-.footer__mail:focus,
-.footer__phone:focus {
+.location__mail:focus,
+.location__phone:focus {
     outline: 1px solid var(--blue);
 }
 
-.footer__mail:hover,
-.footer__phone:hover {
+.location__mail:hover,
+.location__phone:hover {
     text-decoration: underline;
 }
 
-.footer__mail:active,
-.footer__phone:active {
+.location__mail:active,
+.location__phone:active {
     color: blue;
 }
 
@@ -721,7 +807,7 @@ input:checked ~ a label:hover {
     bottom: 0;
     right: 0;
     padding: 25px 50px 25px 120px;
-    width: 50%;
+    width: 51%;
     min-height: 80px;
     font-size: 20px;
     line-height: 1.5;
