@@ -322,15 +322,12 @@ input:checked ~ .language__link label:hover {
 .expertise {
     display: flex;
     flex-wrap: wrap;
+    margin: 0 -30px;
 }
 
 .expertise__item {
     min-width: 240px;
-    margin-bottom: 70px;
-}
-
-.expertise__item:not(:nth-child(3n)) {
-    margin-right: 60px;
+    margin: 0 30px 70px 30px;
 }
 
 .expertise__background {
@@ -482,6 +479,7 @@ input:checked ~ .language__link label:hover {
 .project--big .sticker {
     padding: 40px;
     max-width: 380px;
+    min-height: 380px;
 }
 
 .sticker--left {
@@ -625,20 +623,16 @@ input:checked ~ .language__link label:hover {
 .news__list {
     display: flex;
     flex-wrap: wrap;
+    margin: 0 -60px;
 }
 
 .news__item {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-bottom: 100px;
-    margin-right: 110px;
+    margin: 0 60px 100px 60px;
     width: 280px;
 }
-
-/* .news__item:not(:nth-child(3n)) {
-    margin-right: 120px;
-} */
 
 .news__content {
     margin-bottom: 20px;
