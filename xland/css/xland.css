@@ -4,3 +4,28 @@
 body {
     background-color: var(--black);
 }
+
+/* xland  */
+
+.xland {
+    margin-bottom: 120px;
+    min-height: 680px;
+}
+
+.container--xland {
+    position: relative;
+}
+
+.xland__shell {
+}
+
+.xland__picture {
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+}
+
+.xland__image {
+    object-fit: cover;
+}
+
