@@ -743,26 +743,30 @@ input:checked ~ .language__link label:hover {
     flex-direction: column;
     flex-wrap: wrap;
     margin-bottom: 70px;
-    min-width: 380px;
+    width: 380px;
     min-height: 150px;
 }
 
 .location__country {
+    display: inline-block;
     margin-bottom: 20px;
     font-size: 20px;
     font-weight: bold;
     line-height: 1.5;
     color: #f4f4f7;
+    max-width: 380px;
 }
 
 .location__city,
 .location__adress,
 .location__mail,
 .location__phone {
+    display: inline;
     font-size: 15px;
     line-height: 1.67;
     color: #f4f4f7;
     transition: 0.3s ease-in-out;
+    max-width: 380px;
 }
 
 .location__mail {
